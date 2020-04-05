@@ -1,0 +1,96 @@
+.screen-2 {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.screen-2.visible {
+    pointer-events: auto !important;
+    opacity: 1;
+    z-index: 10000000000000;
+}
+
+
+.screen-2__text-1 {
+    position: absolute;
+    left: 23px;
+    top: 20px;
+    opacity: 0;
+
+}
+
+.screen-2__text-1 img {
+    width: 198px;
+}
+
+.screen-2__boxs {
+    position: absolute;
+    left: 10px;
+    top: 161px;
+}
+
+.light {
+    position: absolute;
+    left: -9px;
+    top: -75px;
+    z-index: 1;
+}
+
+.milk {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.milk.milk--1 {
+    width: 153px;
+}
+
+.milk.milk--2 {
+    width: 134px;
+    left: 102px;
+    top: 8px;
+}
+
+.milk.milk--3 {
+    width: 153px;
+    top: 50px;
+    left: 39px;
+}
+
+.screen-2__text-2 {
+    position: absolute;
+    left: 24px;
+    bottom: 15px;
+    opacity: 0;
+}
+
+.screen-2__text-2 img {
+    width: 194px;
+}
+
+
+.screen-2.visible .milk {
+    animation: milkOn .8s linear both;
+    animation-delay: 2.9s;
+}
+
+.screen-2.visible .light {    
+    animation: milkOn .8s linear both;
+    animation-delay:  2.9s;
+}
+
+.screen-2.visible .screen-2__text-1 {
+    animation: textOn .8s linear both;
+    animation-delay: 1.9s;
+}
+
+.screen-2.visible .screen-2__text-2 {
+    animation: text2On .8s linear both;
+    animation-delay:  2.9s;
+}

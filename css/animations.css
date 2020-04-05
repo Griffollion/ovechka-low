@@ -1,0 +1,189 @@
+.peppy__head.shake {
+    transform-origin: 70% 0;
+    animation: head-shake ease-out 3.2s infinite ;
+    opacity: 1;
+}
+
+.cursor.iron {
+    opacity: 0;
+    animation: iron linear 1.6s infinite ;
+}
+
+.cursor.dragBlanket {
+    top: 259px;
+    left: 162px;
+    opacity: 0;
+    animation: dragBlanket linear 1.6s infinite ;
+}
+
+.peppy__head,
+.peppy__body,
+.blanket__off,
+.blanket__on,
+.slept {
+    transition: opacity 3s;
+}
+
+
+.peppy__head.invisible,
+.blanket__off.invisible,
+.blanket__on.invisible,
+.peppy__body.invisible {
+    opacity: 0;
+}
+
+.slept.visible,
+.blanket__off.visible,
+.blanket__on.visible {
+    opacity: 1;
+}
+
+.sub-text-1,
+.sub-text-2,
+.sub-text-3,
+.main-text,
+.main-text-2 {
+    transition: opacity 1.5s;
+}
+
+.sub-text-1.invisible,
+.sub-text-2.invisible,
+.sub-text-3.invisible,
+.main-text.invisible,
+.main-text-2.invisible {
+    opacity: 0;
+}
+
+
+.sub-text-3.levitate {
+    animation: livetate ease-in-out 6s infinite ;
+}
+
+
+.zzz-img.animated {
+    opacity: 1;
+}
+
+.zzz-img--1.animated {
+    animation: zzz1 linear 3s infinite;
+}
+
+.zzz-img--2.animated {
+    animation: zzz2 linear 3s infinite;
+}
+
+.zzz-img--3.animated {
+    animation: zzz3 linear 3s infinite;
+}
+
+
+/* --------------------------------------- */
+@keyframes head-shake {
+    0%, 50%, 100% {transform: rotate(0deg)}
+    10%,30% {transform: rotate(10deg)}
+    20%,40% {transform: rotate(-10deg)}
+
+}
+
+/* -------------------------------------- */
+@keyframes iron {
+    0% {transform: translate(0, 0) scale(1); opacity: 1;}
+    12% {transform: translate(0, 0) scale(0.85); opacity: 1;}
+    60%{opacity: 1;}
+    80%, 100% {transform: translate(40px, 10px) scale(0.85); opacity: 0;}
+}
+
+/* -------------------------------------- */
+@keyframes dragBlanket {
+    0% {transform: translate(0, 0) scale(1); opacity: 1;}
+    12% {transform: translate(0, 0) scale(0.85); opacity: 1;}
+    60%{opacity: 1;}
+    80%, 100% {transform: translate(-20px, -10px) scale(0.85); opacity: 0;}
+}
+
+/* -------------------------------------- */
+@keyframes livetate {
+    0%,50%,100% {transform: translateY(-8px);}
+    25%,75%{ transform: translateY(8px);}
+}
+
+
+
+/* -------------------------------------- */
+@keyframes zzz1 {
+    0%,10%,100% {opacity: 0;}
+    25%, 90% {opacity: 1;}
+}
+
+@keyframes zzz2 {
+    0%,25%,100% {opacity: 0;}
+    40%,90% {opacity: 1;}
+}
+
+@keyframes zzz3 {
+    0%,40%,100% {opacity: 0;}
+    55%,90% {opacity: 1;}
+}
+
+
+/* -------------------------------------- */
+@keyframes milkOn {
+    0% {opacity: 0; }
+    100% {opacity: 1;}
+}
+
+/* -------------------------------------- */
+@keyframes textOn {
+    0% {opacity: 0; transform: translateY(-20px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+
+/* ------------------------ */
+
+@keyframes text2On {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* --------------------------- */
+.bounceInDown {
+    animation-name: bounceInDown;
+    animation-duration: 3s;
+
+    animation-fill-mode: both;
+    }
+  
+    
+    @keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    
+    0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+    }
+    
+    60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+    }
+    
+    75% {
+    transform: translate3d(0, -10px, 0);
+    }
+    
+    90% {
+    transform: translate3d(0, 5px, 0);
+    }
+    
+    100% {
+    transform: none;
+    }
+    } 
+
+
+
+
+
